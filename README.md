@@ -4,14 +4,14 @@
 
 ### About
 
-- Deploys are indepedent, because of each service is delivery in differents domains
-- Codebase of each service is independent with monorepo
+- Deploys are independent because each service is delivered in different domains
+- The codebase of each service is independent with monorepo
 - Share global data between services with `customProps`
 
 ### Improvements
 
 - Webpack configurations
-- Reuse third party bundle between services with a common bundle
+- Reuse third-party bundle between services with a common bundle
 - Environment settings
 
 ### Demo
