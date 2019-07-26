@@ -1,4 +1,4 @@
-# microfrontends
+# Microfrontends
 
 > This repo is a POC
 
@@ -14,7 +14,7 @@
 - Webpack configurations
 - Environment settings
 
-### Services
+### Demo
 
 - Orchestrator https://goofy-williams-c996a4.netlify.com/
 - Navigation service https://navigation-d4e972.netlify.com/
