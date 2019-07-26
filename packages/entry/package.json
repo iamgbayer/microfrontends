@@ -2,6 +2,7 @@
   "name": "@microfrontends/entry",
   "version": "1.0.0",
   "private": true,
+  "main": "src/index.js",
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
@@ -10,11 +11,12 @@
     "single-spa-react": "^2.10.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "start": "cross-env ENV=dev webpack-dev-server --open --config webpack.dev.js",
+    "build": "cross-env ENV=prod webpack --config webpack.prod.js",
     "test": "jest"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "@babel/core": "^7.2.2",
     "babel-plugin-styled-components": "^1.10.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",

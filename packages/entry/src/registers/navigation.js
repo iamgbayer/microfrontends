@@ -1,8 +1,12 @@
 import { registerApplication } from 'single-spa'
 import { runScript } from './utils'
 
+import { getEnvs } from '../utils'
+
+const { NAVIGATION_URL } = getEnvs()
+
 const load = async () => {
-  await runScript('http://localhost:8082/main.js')
+  await runScript(NAVIGATION_URL)
   return window.navigationLibrary
 }
 

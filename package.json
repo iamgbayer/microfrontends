@@ -7,6 +7,10 @@
   },
   "scripts": {
     "start": "lerna run start --parallel",
+    "build": "lerna run build --parallel",
+    "build:home": "yarn workspace @microfrontends/home",
+    "build:navigation": "yarn workspace @microfrontends/navigation",
+    "build:entry": "yarn workspace @microfrontends/entry",
     "bootstrap": "lerna bootstrap"
   },
   "workspaces": [

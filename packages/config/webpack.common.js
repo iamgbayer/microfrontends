@@ -2,12 +2,15 @@ const webpack = require('webpack')
 
 const PATH = require('./path')
 
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   entry: {
     main: `${PATH.source}/index.js`
   },
 
   output: {
+    publicPath: '/',
     path: PATH.build
   },
 
@@ -30,5 +33,14 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.EnvironmentPlugin({
+      ENV: JSON.stringify(process.env.ENV)
+    }),
+    new HtmlWebpackPlugin({
+      template: `${PATH.public}/index.html`
+    })
+  ]
 }
