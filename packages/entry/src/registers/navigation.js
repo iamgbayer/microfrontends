@@ -7,7 +7,7 @@ const { NAVIGATION_URL } = getEnvs()
 
 const load = async () => {
   await runScript(NAVIGATION_URL)
-  return window.navigationLibrary
+  return window.navigationService
 }
 
 export const navigation = () =>

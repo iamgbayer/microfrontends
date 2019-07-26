@@ -1,11 +1,11 @@
 const environments = {
   dev: {
-    HOME_URL: 'http://localhost:8083/main.js',
-    NAVIGATION_URL: 'http://localhost:8082/main.js'
+    HOME_URL: 'http://localhost:8083/service.js',
+    NAVIGATION_URL: 'http://localhost:8082/service.js'
   },
   prod: {
-    HOME_URL: 'https://home-6b31f1.netlify.com/main.js',
-    NAVIGATION_URL: 'https://navigation-d4e972.netlify.com/main.js'
+    HOME_URL: 'https://home-6b31f1.netlify.com/service.js',
+    NAVIGATION_URL: 'https://navigation-d4e972.netlify.com/service.js'
   }
 }
 

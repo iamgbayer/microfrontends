@@ -7,7 +7,7 @@ const { HOME_URL } = getEnvs()
 
 const load = async () => {
   await runScript(HOME_URL)
-  return window.homeLibrary
+  return window.homeService
 }
 
 export const home = () => registerApplication('home', load, () => true)
