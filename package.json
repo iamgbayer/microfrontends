@@ -1,0 +1,24 @@
+{
+  "name": "microfrontends",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+  },
+  "scripts": {
+    "start": "lerna run start --parallel",
+    "bootstrap": "lerna bootstrap"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^2.6.0",
+    "lerna": "^3.15.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  }
+}

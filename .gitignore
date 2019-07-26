@@ -1,0 +1,8 @@
+.DS_STORE
+node_modules
+build
+.env
+.vscode
+
+yarn-error.log
+lerna-debug.log
