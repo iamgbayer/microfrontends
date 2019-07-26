@@ -10,7 +10,7 @@
     "build": "lerna run build --parallel",
     "build:home": "yarn workspace @microfrontends/home build",
     "build:navigation": "yarn workspace @microfrontends/navigation build",
-    "build:entry": "yarn workspace @microfrontends/entry build",
+    "build:orchestrator": "yarn workspace @microfrontends/orchestrator build",
     "bootstrap": "lerna bootstrap"
   },
   "workspaces": [
