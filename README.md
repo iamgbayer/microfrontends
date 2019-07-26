@@ -1,17 +1,17 @@
 # Microfrontends
 
-> This repo is a POC
+> A practical approach to micro frontends architecture, this is a POC.
 
 ### About
 
 - Deploys are indepedent, because of each service is delivery in differents domains
 - Codebase of each service is independent with monorepo
 - Share global data between services with `customProps`
-- Reuse third party bundle between services with a common bundle
 
 ### Improvements
 
 - Webpack configurations
+- Reuse third party bundle between services with a common bundle
 - Environment settings
 
 ### Demo
