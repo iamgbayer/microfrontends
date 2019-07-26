@@ -8,9 +8,9 @@
   "scripts": {
     "start": "lerna run start --parallel",
     "build": "lerna run build --parallel",
-    "build:home": "yarn workspace @microfrontends/home",
-    "build:navigation": "yarn workspace @microfrontends/navigation",
-    "build:entry": "yarn workspace @microfrontends/entry",
+    "build:home": "yarn workspace @microfrontends/home build",
+    "build:navigation": "yarn workspace @microfrontends/navigation build",
+    "build:entry": "yarn workspace @microfrontends/entry build",
     "bootstrap": "lerna bootstrap"
   },
   "workspaces": [
