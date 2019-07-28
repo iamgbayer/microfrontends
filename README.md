@@ -13,6 +13,7 @@
 - Webpack configurations
 - Reuse third-party bundle between services with a common bundle
 - Environment settings
+- Trigger independents deploys based on package changes 
 
 ### Demo
 
