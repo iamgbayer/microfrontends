@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const merge = require('webpack-merge')
 
 const PATH = require('../config/path')
@@ -5,12 +6,13 @@ const dev = require('../config/webpack.dev.js')
 
 module.exports = merge(dev, {
   entry: {
-    home: `${PATH.source}/service.js`
+    entrypoint: `${PATH.source}/index.js`
   },
   output: {
-    library: 'home'
+    library: 'entrypoint'
   },
+
   devServer: {
-    port: 8060
+    port: 8070
   }
 })

@@ -10,6 +10,9 @@ module.exports = merge(common, {
     open: false,
     contentBase: PATH.build,
     publicPath: '/',
-    historyApiFallback: true
+    historyApiFallback: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
   }
 })

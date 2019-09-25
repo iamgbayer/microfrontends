@@ -5,12 +5,12 @@ const dev = require('../config/webpack.dev.js')
 
 module.exports = merge(dev, {
   entry: {
-    service: `${PATH.source}/service.js`
+    navigation: `${PATH.source}/service.js`
   },
   output: {
-    library: 'navigationService'
+    library: 'navigation'
   },
   devServer: {
-    port: 8082
+    port: 8050
   }
 })

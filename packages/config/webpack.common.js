@@ -9,8 +9,18 @@ module.exports = {
     main: `${PATH.source}/index.js`
   },
 
+  externals: [
+    'react',
+    'react-dom',
+    'react-router-dom',
+    'single-spa',
+    'styled-components',
+    'prop-types'
+  ],
+
   output: {
     publicPath: '/',
+    libraryTarget: 'amd',
     path: PATH.build
   },
 
@@ -36,11 +46,15 @@ module.exports = {
   },
 
   plugins: [
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+
     new webpack.EnvironmentPlugin({
       ENV: JSON.stringify(process.env.ENV)
     }),
     new HtmlWebpackPlugin({
-      template: `${PATH.public}/index.html`
+      template: `${PATH.public}/index.html`,
+      inject: false
     })
   ]
 }
