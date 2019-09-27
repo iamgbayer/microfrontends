@@ -1,17 +1,13 @@
 {
-  "name": "@microfrontends/orchestrator",
+  "name": "@microfrontends/dependencies",
   "version": "1.0.0",
   "private": true,
   "main": "src/index.js",
   "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "single-spa": "^4.3.6",
     "single-spa-react": "^2.10.2"
   },
   "scripts": {
-    "start": "cross-env ENV=dev webpack-dev-server --open --config webpack.dev.js",
+    "start": "cross-env ENV=dev webpack-dev-server --config webpack.dev.js",
     "build": "cross-env ENV=prod webpack --config webpack.prod.js",
     "test": "jest"
   },

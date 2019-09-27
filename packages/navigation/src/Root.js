@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
+import { Link, BrowserRouter } from 'react-router-dom'
 
 const Container = styled.div`
   background-color: red;
@@ -21,9 +22,13 @@ const Reset = createGlobalStyle`
 
 export default function Root() {
   return (
-    <Container>
-      <Reset />
-      Navigation
-    </Container>
+    <BrowserRouter>
+      <Container>
+        <Reset />
+        Navigation
+        <Link to="">Home</Link>
+        <Link to="/checkout">Checkout</Link>
+      </Container>
+    </BrowserRouter>
   )
 }
