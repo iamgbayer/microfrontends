@@ -9,6 +9,7 @@
     "start": "lerna run start --parallel",
     "build": "lerna run build --parallel",
     "build:home": "yarn workspace @microfrontends/home build",
+    "build:checkout": "yarn workspace @microfrontends/checkout build",
     "build:navigation": "yarn workspace @microfrontends/navigation build",
     "build:entrypoint": "yarn workspace @microfrontends/entrypoint build",
     "bootstrap": "lerna bootstrap"
