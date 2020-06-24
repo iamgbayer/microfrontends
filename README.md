@@ -17,3 +17,7 @@
 - Trigger independents deploys based on package changes 
 
 ### Demo
+
+- Orchestrator https://goofy-williams-c996a4.netlify.com/
+- Navigation service https://navigation-d4e972.netlify.com/
+- Home service https://home-6b31f1.netlify.com/
