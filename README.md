@@ -21,3 +21,4 @@
 - Entrypoint https://entrypoint-c996a4.netlify.app/
 - Navigation service https://navigation-d4e972.netlify.com/
 - Home service https://home-6b31f1.netlify.com/
+- Checkout service https://checkout-877ebd.netlify.app/
