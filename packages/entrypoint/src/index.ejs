@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Microfrontends</title>
+    <meta name="importmap-type" content="systemjs-importmap" />
+
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@microfrontends/entrypoint": "https://entrypoint-c996a4.netlify.app/index.js",
+          "@microfrontends/home": "https://home-6b31f1.netlify.app/index.js",
+          "@microfrontends/checkout": "https://checkout-877ebd.netlify.app/index.js",
+          "@microfrontends/navigation": "https://navigation-d4e972.netlify.app/index.js"
+        }
+      }
+    </script>
+
+    <% if (isLocal) { %>
+      <script type="systemjs-importmap">
+        {
+          "imports": {
+            "@microfrontends/entrypoint": "//localhost:9000/index.js",
+            "@microfrontends/home": "localhost:8086/index.js",
+            "@microfrontends/checkout": "localhost:8087/index.js",
+            "@microfrontends/navigation": "localhost:8085/index.js"
+          }
+        }
+      </script>
+    <% } %>
+
+    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+      System.import('@microfrontends/entrypoint');
+    </script>
+
+    <div id="navigation"></div>
+    <div id="content"></div>
+
+    <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+  </body>
+</html>

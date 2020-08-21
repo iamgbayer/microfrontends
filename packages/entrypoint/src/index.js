@@ -4,19 +4,19 @@ import { start, registerApplication } from 'single-spa'
 import { whenMatch } from './utils'
 
 registerApplication(
-  'home',
+  '@microfrontends/home',
   SystemJS.import('@microfrontends/home'),
   whenMatch('/')
 )
 
 registerApplication(
-  'checkout',
+  '@microfrontends/checkout',
   SystemJS.import('@microfrontends/checkout'),
   whenMatch('/checkout')
 )
 
 registerApplication(
-  'navigation',
+  '@microfrontends/navigation',
   SystemJS.import('@microfrontends/navigation'),
   () => true
 )
