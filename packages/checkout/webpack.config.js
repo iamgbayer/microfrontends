@@ -12,7 +12,7 @@ module.exports = webpackConfigEnv => {
   return webpackMerge.smart(defaultConfig, {
     entry: path.resolve(__dirname, 'src/index.js'),
     output: {
-      filename: 'index.js',
+      filename: 'microfrontends.js',
       path: path.resolve(__dirname, 'build')
     },
     devServer: {
