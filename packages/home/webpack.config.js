@@ -4,7 +4,7 @@ const path = require('path')
 
 module.exports = webpackConfigEnv => {
   const defaultConfig = singleSpaDefaults({
-    orgName: 'microfrontends',
+    orgName: '@microfrontends',
     projectName: 'home',
     webpackConfigEnv
   })
